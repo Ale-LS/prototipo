@@ -1,0 +1,18 @@
+body {
+    font-family: Verdana;
+  }
+  
+  .nav-item {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .menu-superior {
+    text-align: right;
+  }
+  
+  .menu-superior li {
+    display: inline;
+    margin-right: 20px;
+  }
