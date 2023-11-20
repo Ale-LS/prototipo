@@ -11,4 +11,8 @@ def nosotros(request):
 
 def registro(request):
         return render(request, 'core/registro.html')
+
+def reservar_hora(request):
+        return render(request, 'core/reservar_hora.html')
+
 # Create your views here.

@@ -40,10 +40,12 @@
             <a class="nav-link active" aria-current="page" href="{% url 'ingresar' %}">Iniciar sesión</a>
           </li>
         </ul>
-        <button type="button" class="btn btn-dark" href="#" >
-          <img src="{% static 'core/img/logo_calendario.png' %}" alt="Logo" width="50" height="50">
-          <span>Reservar Hora</span>
-        </button>
+        <a href="{% url 'reservar_hora' %}">
+            <button type="button" class="btn btn-dark" href="{% url 'reservar_hora' %}" >
+            <img src="{% static 'core/img/logo_calendario.png' %}" alt="Logo" width="50" height="50">
+            <span>Reservar Hora</span>
+            </button>
+        </a>
       </div>
     </div>
   </nav>
