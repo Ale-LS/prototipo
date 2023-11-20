@@ -1,0 +1,36 @@
+{% extends 'core/navbar_admin.html' %}
+
+{% load static %}
+
+
+    <!-- Navbar -->
+ 
+
+{% block content %}
+
+
+<!-- Administracion -->
+
+    <!-- titulo -->
+    <div class="text-center">
+        <h1 style="margin-top: 20px; margin-left: 20px; font-weight: 1000;">Administrador</h1>
+      </div>
+      <br><br>
+  
+      <!-- botones -->
+      <div class="row" id="botones">
+        <div class="col text-center" style="margin-top: 10px; margin-bottom: 10px; margin-left: 20px;">
+          <button type="submit" class="btn btn-dark"><a href="#" style="text-decoration: none; color: white;">Gestionar Pacientes</a></button>
+        </div>
+      </div>
+      <div class="row" id="botones">
+        <div class="col text-center" style="margin-top: 10px; margin-bottom: 10px; margin-left: 20px;">
+          <button type="submit" class="btn btn-dark"><a href="{% url 'gestion_medicos' %}" style="text-decoration: none; color: white;">Gestionar Medicos</a></button>
+        </div>
+      </div>
+
+      {% endblock content %}
+
+      <script 
+      src="{% static 'core/js/script_admin.js' %}">
+    </script>

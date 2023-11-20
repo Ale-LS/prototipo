@@ -15,4 +15,10 @@ def registro(request):
 def reservar_hora(request):
         return render(request, 'core/reservar_hora.html')
 
+def administrador(request):
+        return render(request, 'core/administrador.html')
+
+def gestion_medicos(request):
+        return render(request, 'core/gestion_medicos.html')
+
 # Create your views here.

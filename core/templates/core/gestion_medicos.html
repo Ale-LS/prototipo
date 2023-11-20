@@ -1,0 +1,86 @@
+{% extends 'core/navbar_admin.html' %}
+
+{% load static %}
+
+
+    <!-- Navbar -->
+ 
+
+{% block content %}
+ 
+ 
+ <!-- titulo -->
+    <div class="text-center">
+        <h1 style="margin-top: 20px; font-weight: 1000;">Gestionar Medicos</h1>
+      </div>
+      <br>
+  
+      <div class="d-flex justify-content-center">
+        <form class="form-inline mx-auto">
+          <div class="d-flex align-items-center">
+            <input class="form-control mr-sm-2" type="search" id="search" placeholder="Buscar Médicos" aria-label="Search">
+            <button class="btn btn-dark my-2 my-sm-0" type="submit" style="margin: 20px;">Buscar</button>
+          </div>
+        </form>
+      </div>
+      <br>
+  
+      <!-- Tabla Usuario -->
+      <div class="table-responsive">
+        <table class="table table-bordered" style="background-color: rgb(184, 184, 184); border: 2px solid black; width: 90%; margin: auto;">
+          <thead class="table-dark">
+            <tr>
+              <th scope="col" style="font-weight: 1000; font-size: 20px;">ID</th>
+              <th scope="col" style="font-weight: 1000; font-size: 20px;">RUT</th>
+              <th scope="col" style="font-weight: 1000; font-size: 20px;">Nombre</th>
+              <th scope="col" style="font-weight: 1000; font-size: 20px;">Apellido</th>
+              <th scope="col" style="font-weight: 1000; font-size: 20px;">Especialidad</th>
+              <th scope="col" style="font-weight: 1000; font-size: 20px;">Imagen</th>
+              <th scope="col" style="font-weight: 1000; font-size: 20px;">Opciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="color: black; font-size: 25px;">001</td>
+              <td style="color: black; font-size: 25px;">10.774.567-7</td>
+              <td style="color: black; font-size: 25px;">Daniel Eduardo</td>
+              <td style="color: black; font-size: 25px;">Carvajal Hausdorf</td>
+              <td style="color: black; font-size: 25px;">Medicina General</td>
+              <td><img src="{% static 'core/img/doctor01.gif' %}" style="width: 120px;"></td>
+              <td style="color: black; font-size: 25px;">
+                <button type="submit" class="btn btn-dark btn-lg">Editar</button>
+                <button type="submit" class="btn btn-dark btn-lg">Eliminar</button>
+              </td>
+            </tr>
+            <tr>
+              <td style="color: black; font-size: 25px;">002</td>
+              <td style="color: black; font-size: 25px;">8.222.788-3</td>
+              <td style="color: black; font-size: 25px;">Marcela Paz</td>
+              <td style="color: black; font-size: 25px;">Gallegos Angulo</td>
+              <td style="color: black; font-size: 25px;">Medicina General</td>
+              <td><img src="{% static 'core/img/doctor02.gif' %}" style="width: 120px;"></td>
+              <td style="color: black; font-size: 25px;">
+                <button type="submit" class="btn btn-dark btn-lg">Editar</button>
+                <button type="submit" class="btn btn-dark btn-lg">Eliminar</button>
+              </td>
+            </tr>
+            <tr>
+              <td style="color: black; font-size: 25px;">003</td>
+              <td style="color: black; font-size: 25px;">9.355.677-9</td>
+              <td style="color: black; font-size: 25px;">Biserka Savka</td>
+              <td style="color: black; font-size: 25px;">Spralja Satalic</td>
+              <td style="color: black; font-size: 25px;">Cirugia</td>
+              <td><img src="{% static 'core/img/doctor03.gif' %}" style="width: 120px;"></td>
+              <td style="color: black; font-size: 25px;">
+                <button type="submit" class="btn btn-dark btn-lg">Editar</button>
+                <button type="submit" class="btn btn-dark btn-lg">Eliminar</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      {% endblock content %}
+
+      <script 
+      src="{% static 'core/js/script_admin.js' %}">
+    </script>
