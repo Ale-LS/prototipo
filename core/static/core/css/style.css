@@ -6,13 +6,24 @@ body {
     text-decoration: none;
     font-size: 20px;
     font-weight: 500;
+    list-style-type: none;
+    display:inline;
   }
   
   .menu-superior {
     text-align: right;
+    list-style-type: none;
   }
   
   .menu-superior li {
-    display: inline;
+    display:inline;
     margin-right: 20px;
+    list-style-type: none;
   }
+
+.menu-superior btn {
+    margin: 20px;
+    float: right;
+    display: inline;
+}
+
