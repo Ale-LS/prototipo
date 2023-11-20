@@ -1,0 +1,76 @@
+{% extends 'core/menu.html' %}
+
+{% load static %}
+
+
+    <!-- Navbar -->
+ 
+
+{% block content %}
+   
+   
+   <!-- titulo -->
+    <div class="text-center">
+        <h1 style="margin-top: 20px; font-weight: 1000;">Solicitud de Citas Medicas</h1>
+    </div>
+    <br>
+
+    <form id="citaForm" class="row g-0 needs-validation">
+        <div class="container-fluid" style="font-weight: bold;">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-4">
+
+                    <div class="form-group">
+                        <br>
+                        <label for="centroMedico">Centro Medico:</label>
+                        <select id="centroMedico" name="centroMedico">
+                            <option value="centro1">Providencia</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <br>
+                        <label for="especialidad">Especialidad:</label>
+                        <select id="especialidad" name="especialidad"></select>
+                    </div>
+
+                    <div class="form-group">
+                        <br>
+                        <label for="medico">Medico:</label>
+                        <select id="medico" name="medico"></select>
+                    </div>
+
+                    <div class="form-group">
+                        <br>
+                        <label for="fecha">Fecha de la Cita:</label>
+                        <input type="date" id="fecha" name="fecha">
+                    </div>
+
+                    <div class="form-group">
+                        <br>
+                        <label for="hora">Hora de la Cita:</label>
+                        <select id="hora" name="hora">
+                        <!-- Las horas disponibles se cargarán dinámicamente aquí -->
+                        </select>
+                    </div>
+
+                    <!-- Botones -->
+                    <div class="row" id="botones">
+                        <div class="col text-center" style="margin: 40px;">
+                            <button class="btn btn-dark" onclick="Tomahora(this)">Agendar Cita</button>
+                            <div id="alertaPersonalizada" class="alerta" style="display: none;">
+                                <div class="alerta-titulo">Titulo: Todo listo!</div>
+                                <div class="alerta-cuerpo">Tu hora ha sido agendada correctamente con fecha: <span id="fechaAgendada"></span></div>
+                                <div class="alerta-footer">
+                                    <button class="btn" onclick="cerrarAlerta()">OK</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </form>
+
+    {% endblock content %}
