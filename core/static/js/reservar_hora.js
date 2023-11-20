@@ -33,28 +33,16 @@ function generarFechasDisponibles() {
 
 // Datos de disponibilidad
 var MedicosData = {
-    "Medico A": {
-        "especialidad": "Cardiologia",
+    "Daniel Carvajal": {
+        "especialidad": "Medicina General",
         "disponibilidad": generarFechasDisponibles()
     },
-    "Medico B": {
-        "especialidad": "Cardiologia",
+    "Marcela Gallegos": {
+        "especialidad": "Medicina General",
         "disponibilidad": generarFechasDisponibles()
     },
-    "Medico C": {
-        "especialidad": "Dermatologia",
-        "disponibilidad": generarFechasDisponibles()
-    },
-    "Medico D": {
-        "especialidad": "Dermatologia",
-        "disponibilidad": generarFechasDisponibles()
-    },
-    "Medico E": {
-        "especialidad": "Oftalmologia",
-        "disponibilidad": generarFechasDisponibles()
-    },
-    "Medico F": {
-        "especialidad": "Oftalmologia",
+    "Biserka Spralja": {
+        "especialidad": "Cirugia",
         "disponibilidad": generarFechasDisponibles()
     }
 };
