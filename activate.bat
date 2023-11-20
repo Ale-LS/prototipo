@@ -1,0 +1,1 @@
+call C:\github\prototipo\Scripts\activate.bat
